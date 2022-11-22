@@ -35,3 +35,14 @@ moreColors.addEventListener("click",()=>{
   }
   console.log(moreColorsData.dataset.morecolors);
 });
+
+// gridSize
+
+const itemSize = document.querySelectorAll(".item-size");
+console.log(itemSize);
+itemSize.forEach((item)=>{
+  item.addEventListener("click",()=>{
+    item.classList.toggle("active");
+    // console.log(item);
+  })
+})

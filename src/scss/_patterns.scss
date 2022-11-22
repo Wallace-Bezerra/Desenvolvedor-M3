@@ -38,3 +38,24 @@ input[type="checkbox"]:not(:checked) {
     }
   }
 }
+
+.box-check {
+  margin-top: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  position: relative;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    span {
+      cursor: pointer;
+    }
+  }
+}

@@ -96,7 +96,7 @@
   .products-main {
     margin-top: 65px;
     .filters-attributes {
-      width: 157px;
+      width: 158px;
       .filters-colors {
         p {
           color: $neutral-100;
@@ -105,17 +105,8 @@
           letter-spacing: 0.05em;
           font-weight: 500;
         }
-        .colors {
-          margin-top: 14px;
-          margin-bottom: 10px;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 100%;
-          position: relative;
 
+        .box-check {
           &[data-moreColors] {
             margin-top: 8px;
             opacity: 0;
@@ -134,15 +125,6 @@
             // top: 0px;
             height: 146px;
           }
-          li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            span {
-              cursor: pointer;
-            }
-          }
         }
         .more-colors {
           cursor: pointer;
@@ -158,6 +140,31 @@
       }
       .filters-size {
         transition: all 0.7s;
+        .grid-size {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 8px;
+          margin-block: 24px;
+          .item-size {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: $neutral-300;
+            border: 1.5px solid rgba(0, 0, 0, 0.5);
+            width: 32px;
+            height: 32px;
+            transition: all 0.4s;
+            &:hover {
+              border: 1.5px solid $primary;
+              color: $default;
+            }
+            &.active {
+              border: 1.5px solid $primary;
+              color: $default;
+            }
+          }
+        }
       }
     }
   }
