@@ -1,0 +1,29 @@
+header {
+  border-bottom: 2px solid #c7c7c7;
+  width: 100%;
+  .header {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cart {
+      position: relative;
+      &::after {
+        content: var(--text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        line-height: 12px;
+        width: 12px;
+        height: 13px;
+        background-color: $primary;
+        color: $white;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 8px;
+      }
+    }
+  }
+}

@@ -1,19 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Desenvolvedor M3</title>
   <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
+  <header>
+    <div class="header container">
+      <div class="logo">
+        <img src="./img/logo-m3.png" alt="Logo-m3">
+      </div>
+      <div class="cart">
+        <img src="./img/icon-cart.png" alt="Icone do carrinho">
+      </div>
+    </div>
+  </header>
 
+  <main class="home container">
+    <section class="top-area">
+      <div class="title">
+        <h1>Blusas</h1>
+      </div>
+      <div class="filters-sort">
+        <div class="filter-select">
+          <span>Ordenar por:</span>
+          <img class="icon-cart" src="./img/arrow.svg" alt="icone de selecionar">
+        </div>
+
+        <div class="filter-options">
+          <ul class="options">
+            <li>
+              Mais recentes
+            </li>
+            <li>
+              Menor preço
+            </li>
+            <li>
+              Maior preço
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <section class="products-main">
+      <div class="filters-attributes">
+        <div class="filters-colors">
+          <p>CORES</p>
+          <ul class="colors">
+            <li>
+              <input type="checkbox" id="amarelo">
+              <label for="amarelo"><span>Amarelo</span></label>
+
+            </li>
+            <li>
+              <input type="checkbox" id="azul">
+              <label for="azul"><span>Azul</span></label>
+            </li>
+            <li>
+              <input type="checkbox" id="branco">
+              <label for="branco"><span>Branco</span></label>
+
+            </li>
+            <li>
+              <input type="checkbox" id="cinza">
+              <label for="cinza"><span>Cinza</span></label>
+            </li>
+
+            <div class="more-colors">
+              <a href="">Ver todas as cores</a>
+              <img src="./img/arrow-colors.svg" alt="Icone seta das cores">
+            </div>
+            <ul class="colors" data-moreColors>
+              <li>
+                <input type="checkbox" id="laranja">
+                <label for="laranja"><span>Laranja</span></label>
+              </li>
+
+              <li>
+                <input type="checkbox" id="verde">
+                <label for="verde"><span>Verde</span></label>
+              </li>
+              <li>
+                <input type="checkbox" id="vermelho">
+                <label for="vermelho"><span>Vermelho</span></label>
+
+              </li>
+              <li>
+                <input type="checkbox" id="preto">
+                <label for="preto"><span>Preto</span></label>
+              </li>
+              <li>
+                <input type="checkbox" id="rosa">
+                <label for="rosa"><span>Rosa</span></label>
+              </li>
+              <li>
+                <input type="checkbox" id="vinho">
+                <label for="vinho"><span>Vinho</span></label>
+              </li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="filters-size">
+          <p>TAMANHO</p>
+          <ul class="grid-size">
+            <li></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
 </body>
-<h1>Desafio m3</h1>
 
-<script src="bundle.js"></script>
+<script src=" bundle.js"></script>
 
 </html>
