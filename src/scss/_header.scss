@@ -1,13 +1,18 @@
 header {
+  max-width: 1920px;
+  margin: 0 auto;
   border-bottom: 2px solid #c7c7c7;
   width: 100%;
+
   .header {
     height: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .cart {
       position: relative;
+
       &::after {
         content: var(--text);
         display: flex;

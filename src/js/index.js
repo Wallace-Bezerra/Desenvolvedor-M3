@@ -4,9 +4,9 @@ console.log("Dev m3", serverurl);
 
 //carrinho implementação
 const root = document.querySelector(":root")
-const teste  = root.style.getPropertyValue("--text");
+const teste = root.style.getPropertyValue("--text");
 console.log(teste)
-root.addEventListener("click",()=>{
+root.addEventListener("click", () => {
   root.style.setProperty("--text", "'1'");
   console.log(root.style.getPropertyValue("--text"));
 });
@@ -17,20 +17,20 @@ const iconCart = document.querySelector(".icon-cart")
 const filterSelect = document.querySelector(".filter-select")
 const filterOption = document.querySelector(".filter-options")
 
-filterSelect.addEventListener("click",()=>{
-    filterOption.classList.toggle("active");
+filterSelect.addEventListener("click", () => {
+  filterOption.classList.toggle("active");
 });
 
 //moreColors
 
 const moreColors = document.querySelector(".more-colors");
 const moreColorsData = document.querySelector("[data-moreColors]");
-moreColors.addEventListener("click",()=>{
+moreColors.addEventListener("click", () => {
   // moreColors.dataset.dataMoreColors = "active";
-  if(moreColorsData.dataset.morecolors === "active"){
+  if (moreColorsData.dataset.morecolors === "active") {
     moreColorsData.dataset.morecolors = "";
   }
-  else{
+  else {
     moreColorsData.dataset.morecolors = "active"
   }
   console.log(moreColorsData.dataset.morecolors);
@@ -40,9 +40,20 @@ moreColors.addEventListener("click",()=>{
 
 const itemSize = document.querySelectorAll(".item-size");
 console.log(itemSize);
-itemSize.forEach((item)=>{
-  item.addEventListener("click",()=>{
+itemSize.forEach((item) => {
+  item.addEventListener("click", () => {
     item.classList.toggle("active");
     // console.log(item);
   })
 })
+
+
+// api teste
+
+// async function getProducts() {
+//   const data = await fetch("http://localhost:5000/products");
+//   const response = await data.json();
+//   console.log(response);
+// }
+
+// getProducts();

@@ -1,9 +1,12 @@
 .home {
   padding-top: 40px;
+  // background-color: red;
+
   .top-area {
     height: 55px;
     display: flex;
     justify-content: space-between;
+
     .title {
       h1 {
         font-weight: 500;
@@ -11,6 +14,7 @@
         line-height: 44px;
       }
     }
+
     .filters-sort {
       display: flex;
       align-items: center;
@@ -21,6 +25,7 @@
       height: 42px;
       border: 1px solid rgba(0, 0, 0, 0.5);
       position: relative;
+
       .filter-select {
         cursor: pointer;
         display: flex;
@@ -29,11 +34,13 @@
         gap: 10px;
         align-items: center;
         justify-content: center;
+
         span {
           font-weight: 400;
           font-size: 16px;
           line-height: 22px;
         }
+
         img {
           padding-top: 4px;
         }
@@ -53,17 +60,21 @@
         opacity: 0;
         transform: translateY(-10px);
         transition: all 0.4s;
+
         &.active {
           // display: flex;
           opacity: 1;
           pointer-events: all;
           transform: translateY(0px);
         }
+
         .options {
+          background-color: $white;
           display: flex;
           flex-direction: column;
           width: 100%;
           height: 100%;
+
           li {
             padding-left: 12px;
             padding-block: 6px;
@@ -73,12 +84,15 @@
             height: 100%;
             cursor: pointer;
             transition: all 0.3s;
+
             &:hover {
               background-color: $primary;
+              color: $white;
             }
           }
         }
       }
+
       // &::after {
       //   content: "";
       //   width: 8px;
@@ -93,10 +107,16 @@
       // }
     }
   }
+
   .products-main {
+    display: flex;
+    gap: 44px;
     margin-top: 65px;
+    margin-bottom: 35px;
+
     .filters-attributes {
       width: 158px;
+
       .filters-colors {
         p {
           color: $neutral-100;
@@ -117,6 +137,7 @@
             transition: height 0.6s, opacity 1s ease, position 0.8s;
             // top: 130px;
           }
+
           &[data-moreColors="active"] {
             opacity: 1;
             pointer-events: all;
@@ -126,9 +147,11 @@
             height: 146px;
           }
         }
+
         .more-colors {
           cursor: pointer;
           width: max-content;
+
           a {
             font-weight: 400;
             font-size: 12px;
@@ -138,13 +161,16 @@
           }
         }
       }
+
       .filters-size {
         transition: all 0.7s;
+
         .grid-size {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           gap: 8px;
           margin-block: 24px;
+
           .item-size {
             display: flex;
             justify-content: center;
@@ -155,10 +181,12 @@
             width: 32px;
             height: 32px;
             transition: all 0.4s;
+
             &:hover {
               border: 1.5px solid $primary;
               color: $default;
             }
+
             &.active {
               border: 1.5px solid $primary;
               color: $default;
@@ -167,5 +195,27 @@
         }
       }
     }
+
+    .products-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+
+      .products-grid {
+        // background-color: gold;
+        width: 976px;
+        display: grid;
+        grid-template-columns: repeat(3, 195.25px);
+        justify-content: center;
+        gap: 42px 64px;
+      }
+    }
+
   }
+
+  // .loading-items {
+  //   display: flex;
+  //   justify-content: center;
+  // }
 }

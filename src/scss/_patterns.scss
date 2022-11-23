@@ -8,9 +8,7 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
 
-input[type="checkbox"] {
   &::after {
     content: "";
     width: 10px;
@@ -18,23 +16,18 @@ input[type="checkbox"] {
     display: block;
     transition: all 0.3s;
   }
-}
-input[type="checkbox"]:checked {
-  &::after {
-    background: $primary;
-  }
-}
 
-// input[type="checkbox"]:hover {
-//   &::after {
-//     background-color: $neutral-300;
-//   }
-// }
-
-input[type="checkbox"]:not(:checked) {
-  &:hover {
+  &:checked {
     &::after {
-      background-color: #b4afaf;
+      background: $primary;
+    }
+  }
+
+  &:not(:checked) {
+    &:hover {
+      &::after {
+        background-color: #b4afaf;
+      }
     }
   }
 }
@@ -49,13 +42,80 @@ input[type="checkbox"]:not(:checked) {
   font-size: 14px;
   line-height: 100%;
   position: relative;
+
   li {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: 600;
+
     span {
       cursor: pointer;
     }
   }
+}
+
+.btn {
+  padding: 7px 49px;
+  color: $white;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .6s;
+
+  &.default {
+    background-color: $default;
+
+    &:hover {
+      background-color: $neutral-100;
+    }
+  }
+
+  &.primary {
+    padding: 8px 31px;
+    background-color: $primary;
+
+    &:hover {
+      filter: grayscale(0.3);
+    }
+  }
+}
+
+.card-item {
+  width: 195px;
+  text-align: center;
+
+  .card-description {
+    margin-top: 10px;
+    margin-bottom: 14px;
+
+    .card-title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+
+    }
+
+    .card-price {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .card-parcel {
+      font-size: 16px;
+      line-height: 22px;
+      color: $neutral-200;
+    }
+  }
+
+  .btn {
+    width: 100%;
+  }
+
 }
