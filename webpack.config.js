@@ -25,6 +25,9 @@ module.exports = (paths) => ({
                 { targets: { browsers: ["last 2 versions"] } },
               ],
             ],
+            plugins: [
+              ["@babel/transform-runtime"]
+          ],
             cacheDirectory: true,
           },
         },

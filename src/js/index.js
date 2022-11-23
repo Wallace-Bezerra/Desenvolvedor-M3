@@ -49,11 +49,45 @@ itemSize.forEach((item) => {
 
 
 // api teste
+const productsGrid = document.querySelector(".products-grid");
+const options = { style: 'currency', currency: 'BRL', minimumFractionDigits: 2, maximumFractionDigits: 3 }
+const formatNumber = new Intl.NumberFormat('pt-BR', options)
 
-// async function getProducts() {
-//   const data = await fetch("http://localhost:5000/products");
-//   const response = await data.json();
-//   console.log(response);
+async function fetchProducts() {
+  const data = await fetch("http://localhost:5000/products");
+  const response = await data.json();
+//  getProducts(response);
+renderProducts(response);
+}
+
+// function getProducts(products){
+//   const productsArray = products.map((item)=>{
+//     return item
+//    })
+//    console.log(productsArray)
 // }
 
-// getProducts();
+
+
+
+function renderProducts(products){
+  
+    products.forEach((item)=>{
+      productsGrid.innerHTML +=
+        `
+          <li class="card-item">
+            <img src=${item.image} alt="">
+            <div class="card-description">
+              <h2 class="card-title">${item.name}</h2>
+              <p class="card-price">${formatNumber.format(item.price)}</p>
+              <span class="card-parcel">até ${item.parcelamento[0]}x de ${formatNumber.format(item.parcelamento[1])}</span>
+            </div>
+            <button class="btn default">COMPRAR</button>
+          </li>
+        `
+
+    })
+}
+
+fetchProducts();
+
