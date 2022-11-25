@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "npm: start",
+			"detail": "node_modules/.bin/cross-env SERVER_API=http://localhost:5000 npm-run-all --parallel dev server"
+		}
+	]
+}

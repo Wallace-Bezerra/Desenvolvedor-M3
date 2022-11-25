@@ -37,13 +37,13 @@
 
         <div class="filter-options">
           <ul class="options">
-            <li>
+            <li class="recent">
               Mais recentes
             </li>
-            <li>
+            <li class="small-price">
               Menor preço
             </li>
-            <li>
+            <li class="high-priced">
               Maior preço
             </li>
           </ul>
@@ -57,7 +57,7 @@
       <div class="filters-attributes">
         <div class="filters-colors">
           <p>CORES</p>
-          <ul class="box-check">
+          <ul class="box-check" data-colors>
             <li>
               <input type="checkbox" id="amarelo">
               <label for="amarelo"><span>Amarelo</span></label>
@@ -78,7 +78,7 @@
             </li>
 
             <div class="more-colors">
-              <a href="">Ver todas as cores</a>
+              <span>Ver todas as cores</span>
               <img src="./img/arrow-colors.svg" alt="Icone seta das cores">
             </div>
             <ul class="box-check" data-moreColors>
@@ -114,8 +114,11 @@
 
         <div class="filters-size">
           <p>TAMANHO</p>
-          <ul class="grid-size">
-            <li class="item-size">P</li>
+          <ul class="grid-size" data-sizes>
+            <li class="item-size">
+              <span>P</span>
+              <input type="checkbox" id="P">
+            </li>
             <li class="item-size">M</li>
             <li class="item-size">G</li>
             <li class="item-size">GG</li>
@@ -133,7 +136,7 @@
           <p>FAIXA DE PREÇO</p>
           <ul class="box-check">
             <li>
-              <input type="checkbox" id="">
+              <input type="checkbox" data-prices>
               <label for=""><span>de R$0 até R$50</span></label>
 
             </li>
@@ -216,7 +219,7 @@
             <button class="btn default">COMPRAR</button>
           </li> -->
         </ul>
-        <button class="btn primary">CARREGAR MAIS</button>
+        <button class="btn primary loading-more">CARREGAR MAIS</button>
       </div>
     </section>
   </main>

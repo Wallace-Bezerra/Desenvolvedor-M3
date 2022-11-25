@@ -87,6 +87,7 @@ input[type="checkbox"] {
 .card-item {
   width: 195px;
   text-align: center;
+  animation: fadeIn forwards .8s;
 
   .card-description {
     margin-top: 10px;
@@ -118,4 +119,16 @@ input[type="checkbox"] {
     width: 100%;
   }
 
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
