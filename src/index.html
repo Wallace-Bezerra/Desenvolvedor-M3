@@ -57,7 +57,7 @@
       <div class="filters-attributes">
         <div class="filters-colors">
           <p>CORES</p>
-          <ul class="box-check" data-colors>
+          <ul class="box-check" data-colors="colors">
             <li>
               <input type="checkbox" id="amarelo">
               <label for="amarelo"><span>Amarelo</span></label>
@@ -81,7 +81,7 @@
               <span>Ver todas as cores</span>
               <img src="./img/arrow-colors.svg" alt="Icone seta das cores">
             </div>
-            <ul class="box-check" data-moreColors>
+            <ul class="box-check" data-colors="colors" data-moreColors>
               <li>
                 <input type="checkbox" id="laranja">
                 <label for="laranja"><span>Laranja</span></label>
@@ -114,47 +114,77 @@
 
         <div class="filters-size">
           <p>TAMANHO</p>
-          <ul class="grid-size" data-sizes>
+          <ul class="grid-size" data-sizes="sizes">
             <li class="item-size">
               <span>P</span>
               <input type="checkbox" id="P">
             </li>
-            <li class="item-size">M</li>
-            <li class="item-size">G</li>
-            <li class="item-size">GG</li>
-            <li class="item-size">U</li>
-            <li class="item-size">36</li>
-            <li class="item-size">38</li>
-            <li class="item-size">40</li>
-            <li class="item-size">42</li>
-            <li class="item-size">44</li>
-            <li class="item-size">46</li>
+            <li class="item-size">
+              <span>M</span>
+              <input type="checkbox" id="M">
+            </li>
+            <li class="item-size">
+              <span>G</span>
+              <input type="checkbox" id="G">
+            </li>
+            <li class="item-size">
+              <span>GG</span>
+              <input type="checkbox" id="GG">
+            </li>
+            <li class="item-size">
+              <span>U</span>
+              <input type="checkbox" id="U">
+            </li>
+            <li class="item-size">
+              <span>36</span>
+              <input type="checkbox" id="36">
+            </li>
+            <li class="item-size">
+              <span>38</span>
+              <input type="checkbox" id="38">
+            </li>
+            <li class="item-size">
+              <span>40</span>
+              <input type="checkbox" id="40">
+            </li>
+            <li class="item-size">
+              <span>42</span>
+              <input type="checkbox" id="42">
+            </li>
+            <li class="item-size">
+              <span>44</span>
+              <input type="checkbox" id="44">
+            </li>
+            <li class="item-size">
+              <span>46</span>
+              <input type="checkbox" id="46">
+            </li>
           </ul>
         </div>
 
         <div class="filter-price">
           <p>FAIXA DE PREÇO</p>
-          <ul class="box-check">
+          <ul class="box-check" data-prices="prices">
             <li>
-              <input type="checkbox" data-prices>
+              <input type="checkbox" id="0-50">
               <label for=""><span>de R$0 até R$50</span></label>
 
             </li>
             <li>
-              <input type="checkbox" id="">
+              <input type="checkbox" id="51-150">
               <label for=""><span>de R$51 até R$150</span></label>
             </li>
             <li>
-              <input type="checkbox" id="">
+              <input type="checkbox" id="151-300">
               <label for=""><span>de R$151 até R$300</span></label>
 
             </li>
             <li>
-              <input type="checkbox" id="">
+              <input type="checkbox" id="301-500">
               <label for=""><span>de R$301 até R$500</span></label>
             </li>
             <li>
-              <input type="checkbox" id="">
+              <input type="checkbox" id="500">
               <label for=""><span>a partir de R$ 500</span></label>
             </li>
           </ul>
