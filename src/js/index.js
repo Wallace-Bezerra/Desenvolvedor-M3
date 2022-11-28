@@ -239,7 +239,7 @@ checkboxPrices.forEach((item) => {
         prices.splice(prices.indexOf(item.getAttribute("class")), 1);
         if (prices.length > 0) {
           filtroGlobal = [];
-          filterSize(prices, filtroGlobal);
+          filterPrice(prices, filtroGlobal);
         } else {
           clearProducts();
           filtroGlobal = dataProducts;

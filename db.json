@@ -91,7 +91,7 @@
       "date": "2003-12-17"
     },
     {
-      "id": "9",
+      "id": "10",
       "name": "Pochete Clutch",
       "price": 99.0,
       "parcelamento": [3, 33],
@@ -101,44 +101,95 @@
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
-      "price": 99.0,
-      "parcelamento": [3, 33],
+      "id": "11",
+      "name": "Camisa Longa",
+      "price": 85.0,
+      "parcelamento": [3, 28.3],
       "color": "Preto",
-      "image": "/img/img_10.png",
+      "image": "/img/img_11.png",
       "size": ["M"],
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
+      "id": "12",
+      "name": "Social",
       "price": 99.0,
       "parcelamento": [3, 33],
       "color": "Preto",
-      "image": "/img/img_10.png",
+      "image": "/img/img_18.png",
       "size": ["M"],
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
-      "price": 99.0,
+      "id": "13",
+      "name": "Camisa de seda",
+      "price": 59.0,
       "parcelamento": [3, 33],
-      "color": "Preto",
-      "image": "/img/img_10.png",
+      "color": "Vermelho",
+      "image": "/img/img_17.png",
       "size": ["M"],
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
-      "price": 99.0,
+      "id": "14",
+      "name": "Regata",
+      "price": 59.0,
       "parcelamento": [3, 33.3],
-      "color": "Preto",
-      "image": "/img/img_10.png",
+      "color": "Verde",
+      "image": "/img/img_12.png",
       "size": ["M"],
       "date": "2003-12-17"
+    },
+    {
+      "id": "15",
+      "name": "Malha Azul",
+      "price": 59.0,
+      "parcelamento": [3, 33.3],
+      "color": "Azul",
+      "image": "/img/img_13.png",
+      "size": ["M"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "16",
+      "name": "Blaze Verde",
+      "price": 59.0,
+      "parcelamento": [3, 33.3],
+      "color": "Verde",
+      "image": "/img/img_16.png",
+      "size": ["M"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "17",
+      "name": "Blusa Comprida",
+      "price": 150.0,
+      "parcelamento": [6, 25],
+      "color": "Rosa",
+      "image": "/img/img_14.png",
+      "size": ["GG", "38"],
+      "date": "1999-12-16"
+    },
+    {
+      "id": "18",
+      "name": "Blusa Comum",
+      "price": 59.0,
+      "parcelamento": [3, 33.3],
+      "color": "Azul",
+      "image": "/img/img_19.png",
+      "size": ["GG", "38"],
+      "date": "1999-12-16"
+    },
+    {
+      "id": "19",
+      "name": "Camisa Social",
+      "price": 59.0,
+      "parcelamento": [3, 33.3],
+      "color": "Branco",
+      "image": "/img/img_15.png",
+      "size": ["GG", "38"],
+      "date": "1999-12-16"
     }
+    
   ]
 }
