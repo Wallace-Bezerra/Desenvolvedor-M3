@@ -6,6 +6,10 @@ Ola, somos a Agência Digital M3, uma agência voltada para ramo de comercio ele
 [https://goo.gl/maps/2mWagcctnrGdtFhBA]( https://goo.gl/maps/2mWagcctnrGdtFhBA )
 
 Estamos procurando Desenvolvedores(as) `Front-end`, com sólidos conhecimentos em HTML, CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
+## Minhas informações:
+- Nome: Wallace Bezerra Da Silva 
+- E-mail: wallace_2014_@hotmail.com 
+- Celular/WhatsApp: 11 965035851
 
 ## O que procuramos
 
