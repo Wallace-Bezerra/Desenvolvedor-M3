@@ -191,13 +191,13 @@ checkboxColors.forEach((item) => {
     if (item.checked && !colors.includes(item.getAttribute("class"))) {
       colors.push(item.getAttribute("class"));
       filtroGlobal = [];
-      filterColor(colors, filtroGlobal);
+      filterColor(colors);
     } else {
       if (!item.checked) {
         colors.splice(colors.indexOf(item.getAttribute("class")), 1);
         if (colors.length > 0) {
           filtroGlobal = [];
-          filterColor(colors, filtroGlobal);
+          filterColor(colors);
         } else {
           clearProducts();
           filtroGlobal = dataProducts;
@@ -212,13 +212,13 @@ checkboxSizes.forEach((item) => {
   item.addEventListener("change", () => {
     if (item.checked && !sizes.includes(item.getAttribute("id"))) {
       sizes.push(item.getAttribute("id"));
-      filterSize(sizes, filtroGlobal);
+      filterSize(sizes);
     } else {
       if (!item.checked) {
         sizes.splice(sizes.indexOf(item.getAttribute("id")), 1);
         if (sizes.length > 0) {
           filtroGlobal = [];
-          filterSize(sizes, filtroGlobal);
+          filterSize(sizes);
         } else {
           clearProducts();
           filtroGlobal = dataProducts;
@@ -233,13 +233,13 @@ checkboxPrices.forEach((item) => {
   item.addEventListener("change", () => {
     if (item.checked && !prices.includes(item.getAttribute("class"))) {
       prices.push(item.getAttribute("class"));
-      filterPrice(prices, filtroGlobal);
+      filterPrice(prices);
     } else {
       if (!item.checked) {
         prices.splice(prices.indexOf(item.getAttribute("class")), 1);
         if (prices.length > 0) {
           filtroGlobal = [];
-          filterPrice(prices, filtroGlobal);
+          filterPrice(prices);
         } else {
           clearProducts();
           filtroGlobal = dataProducts;

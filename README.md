@@ -11,6 +11,16 @@ Estamos procurando Desenvolvedores(as) `Front-end`, com sólidos conhecimentos e
 - E-mail: wallace_2014_@hotmail.com 
 - Celular/WhatsApp: 11 965035851
 
+## PROJETO 
+
+<p align="center">
+  <img alt="M3" src="./.github/M3-PROJETO.gif" width="80%">
+</p>
+
+<p align="center">
+  <img alt="M3" src="./.github/M3-PROJETO-MOBILE.gif" width="80%">
+</p>
+
 ## O que procuramos
 
 ### Requisitos Obrigatórios
