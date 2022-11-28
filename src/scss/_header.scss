@@ -11,23 +11,28 @@ header {
     align-items: center;
 
     .cart {
+      padding-right: 5px;
       position: relative;
+      img {
+        width: 30px;
+        height: 30px;
+      }
 
-      &::after {
-        content: var(--text);
+      .cartItem {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 10px;
-        line-height: 12px;
-        width: 12px;
-        height: 13px;
+        font-size: 15px;
+        line-height: 25px;
+        width: 25px;
+        height: 25px;
         background-color: $primary;
         color: $white;
+        font-weight: 500;
         border-radius: 50%;
         position: absolute;
-        top: 10px;
-        left: 8px;
+        top: 16px;
+        left: 14px;
       }
     }
   }

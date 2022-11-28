@@ -19,7 +19,8 @@
         <img src="./img/logo-m3.png" alt="Logo-m3">
       </div>
       <div class="cart">
-        <img src="./img/icon-cart.png" alt="Icone do carrinho">
+        <img src="./img/icon-cart.svg" alt="Icone do carrinho">
+        <span class="cartItem">0</span>
       </div>
     </div>
   </header>
@@ -50,6 +51,187 @@
         </div>
 
       </div>
+
+      <div class="filters-mobile">
+        <button class="btn mobile">Filtrar</button>
+        <button class="btn mobile">Ordenar</button>
+      </div>
+
+      <div class="filterMobile order">
+        <div class="top">
+          <h2>Ordernar</h2>
+          <img class="btnClose" src="./img/close-icon.svg" alt="Icone de fechar">
+        </div>
+        <div class="filter-options">
+          <ul class="options">
+            <li class="recent">
+              Mais recentes
+            </li>
+            <li class="small-price">
+              Menor preço
+            </li>
+            <li class="high-priced">
+              Maior preço
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="filterMobile filter">
+        <div class="top">
+          <h2>Filtrar</h2>
+          <img class="btnClose" src="./img/close-icon.svg" alt="Icone de fechar">
+        </div>
+        <div class="filter-options">
+          <ul class="options">
+            <li class="recent">
+              <div class="title">
+                <p>Cores</p>
+                <img class="arrow-accordion" src="./img/arrow.svg" alt="seta de abrir">
+              </div>
+
+              <div class="filters-colors">
+                <ul class="box-check" data-colors="colors">
+                  <li>
+                    <input type="checkbox" class="amarelo" id="amarelo-mobile">
+                    <label for="amarelo-mobile"><span>Amarelo</span></label>
+
+                  </li>
+                  <li>
+                    <input type="checkbox" class="azul" id="azul-mobile">
+                    <label for="azul-mobile"><span>Azul</span></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="branco" id="branco-mobile">
+                    <label for="branco-mobile"><span>Branco</span></label>
+
+                  </li>
+                  <li>
+                    <input type="checkbox" class="cinza" id="cinza-mobile">
+                    <label for="cinza-mobile"><span>Cinza</span></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="laranja" id="laranja-mobile">
+                    <label for="laranja-mobile"><span>Laranja</span></label>
+                  </li>
+
+                  <li>
+                    <input type="checkbox" class="verde" id="verde-mobile">
+                    <label for="verde-mobile"><span>Verde</span></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="vermelho" id="vermelho-mobile">
+                    <label for="vermelho-mobile"><span>Vermelho</span></label>
+
+                  </li>
+                  <li>
+                    <input type="checkbox" class="preto" id="preto-mobile">
+                    <label for="preto-mobile"><span>Preto</span></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="rosa" id="rosa-mobile">
+                    <label for="rosa-mobile"><span>Rosa</span></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="vinho" id="vinho-mobile">
+                    <label for="vinho-mobile"><span>Vinho</span></label>
+                  </li>
+            </li>
+
+
+          </ul>
+          <li class="filters-size">
+            <div class="title">
+              <p>Tamanhos</p>
+              <img class="arrow-accordion" src="./img/arrow.svg" alt="">
+            </div>
+
+            <ul class="grid-size" data-sizes="sizes">
+              <li class="item-size">
+                <span>P</span>
+                <input type="checkbox" id="P">
+              </li>
+              <li class="item-size">
+                <span>M</span>
+                <input type="checkbox" id="M">
+              </li>
+              <li class="item-size">
+                <span>G</span>
+                <input type="checkbox" id="G">
+              </li>
+              <li class="item-size">
+                <span>GG</span>
+                <input type="checkbox" id="GG">
+              </li>
+              <li class="item-size">
+                <span>U</span>
+                <input type="checkbox" id="U">
+              </li>
+              <li class="item-size">
+                <span>36</span>
+                <input type="checkbox" id="36">
+              </li>
+              <li class="item-size">
+                <span>38</span>
+                <input type="checkbox" id="38">
+              </li>
+              <li class="item-size">
+                <span>40</span>
+                <input type="checkbox" id="40">
+              </li>
+              <li class="item-size">
+                <span>42</span>
+                <input type="checkbox" id="42">
+              </li>
+              <li class="item-size">
+                <span>44</span>
+                <input type="checkbox" id="44">
+              </li>
+              <li class="item-size">
+                <span>46</span>
+                <input type="checkbox" id="46">
+              </li>
+            </ul>
+
+          </li>
+
+          <li class="filters-price">
+            <div class="title">
+              <p>Faixa de preço</P>
+              <img class="arrow-accordion" src="./img/arrow.svg" alt="">
+            </div>
+
+            <ul class="box-check" data-prices="prices">
+              <li>
+                <input type="checkbox" class="0-50" id="0-50-mobile">
+                <label for="0-50-mobile"><span>de R$0 até R$50</span></label>
+
+              </li>
+              <li>
+                <input type="checkbox" class="51-150" id="51-150-mobile">
+                <label for="51-150-mobile"><span>de R$51 até R$150</span></label>
+              </li>
+              <li>
+                <input type="checkbox" class="151-300" id="151-300-mobile">
+                <label for="151-300-mobile"><span>de R$151 até R$300</span></label>
+
+              </li>
+              <li>
+                <input type="checkbox" class="301-500" id="301-500-mobile">
+                <label for="301-500-mobile"><span>de R$301 até R$500</span></label>
+              </li>
+              <li>
+                <input type="checkbox" class="500" id="500-mobile">
+                <label for="500-mobile"><span>a partir de R$ 500</span></label>
+              </li>
+            </ul>
+
+          </li>
+        </div>
+
+
+      </div>
+
     </section>
 
 
@@ -59,21 +241,21 @@
           <p>CORES</p>
           <ul class="box-check" data-colors="colors">
             <li>
-              <input type="checkbox" id="amarelo">
+              <input type="checkbox" class="amarelo" id="amarelo">
               <label for="amarelo"><span>Amarelo</span></label>
 
             </li>
             <li>
-              <input type="checkbox" id="azul">
+              <input type="checkbox" class="azul" id="azul">
               <label for="azul"><span>Azul</span></label>
             </li>
             <li>
-              <input type="checkbox" id="branco">
+              <input type="checkbox" class="branco" id="branco">
               <label for="branco"><span>Branco</span></label>
 
             </li>
             <li>
-              <input type="checkbox" id="cinza">
+              <input type="checkbox" class="cinza" id="cinza">
               <label for="cinza"><span>Cinza</span></label>
             </li>
 
@@ -83,29 +265,29 @@
             </div>
             <ul class="box-check" data-colors="colors" data-moreColors>
               <li>
-                <input type="checkbox" id="laranja">
+                <input type="checkbox" class="laranja" id="laranja">
                 <label for="laranja"><span>Laranja</span></label>
               </li>
 
               <li>
-                <input type="checkbox" id="verde">
+                <input type="checkbox" class="verde" id="verde">
                 <label for="verde"><span>Verde</span></label>
               </li>
               <li>
-                <input type="checkbox" id="vermelho">
+                <input type="checkbox" class="vermelho " id="vermelho">
                 <label for="vermelho"><span>Vermelho</span></label>
 
               </li>
               <li>
-                <input type="checkbox" id="preto">
+                <input type="checkbox" class="preto" id="preto">
                 <label for="preto"><span>Preto</span></label>
               </li>
               <li>
-                <input type="checkbox" id="rosa">
+                <input type="checkbox" class="rosa" id="rosa">
                 <label for="rosa"><span>Rosa</span></label>
               </li>
               <li>
-                <input type="checkbox" id="vinho">
+                <input type="checkbox" class="vinho" id="vinho">
                 <label for="vinho"><span>Vinho</span></label>
               </li>
             </ul>
@@ -166,88 +348,34 @@
           <p>FAIXA DE PREÇO</p>
           <ul class="box-check" data-prices="prices">
             <li>
-              <input type="checkbox" id="0-50">
-              <label for=""><span>de R$0 até R$50</span></label>
+              <input type="checkbox" class="0-50" id="0-50">
+              <label for="0-50"><span>de R$0 até R$50</span></label>
 
             </li>
             <li>
-              <input type="checkbox" id="51-150">
-              <label for=""><span>de R$51 até R$150</span></label>
+              <input type="checkbox" class="51-150" id="51-150">
+              <label for="51-150"><span>de R$51 até R$150</span></label>
             </li>
             <li>
-              <input type="checkbox" id="151-300">
-              <label for=""><span>de R$151 até R$300</span></label>
+              <input type="checkbox" class="151-300" id="151-300">
+              <label for="151-300"><span>de R$151 até R$300</span></label>
 
             </li>
             <li>
-              <input type="checkbox" id="301-500">
-              <label for=""><span>de R$301 até R$500</span></label>
+              <input type="checkbox" class="301-500" id="301-500">
+              <label for="301-500"><span>de R$301 até R$500</span></label>
             </li>
             <li>
-              <input type="checkbox" id="500">
-              <label for=""><span>a partir de R$ 500</span></label>
+              <input type="checkbox" class="500" id="500">
+              <label for="500"><span>a partir de R$ 500</span></label>
             </li>
           </ul>
         </div>
 
 
       </div>
-      <div class="products-container">
+      <div class="products-Gridcontainer">
         <ul class="products-grid">
-          <!-- <li class="card-item">
-            <img src="./img/img_2.png" alt="">
-            <div class="card-description">
-              <h2 class="card-title">CAMISETA MESCLA</h2>
-              <p class="card-price">R$ 28,00</p>
-              <span class="card-parcel">até 3x de R$9,33</span>
-            </div>
-            <button class="btn default">COMPRAR</button>
-          </li>
-          <li class="card-item">
-            <img src="./img/img_2.png" alt="">
-            <div class="card-description">
-              <h2 class="card-title">CAMISETA MESCLA</h2>
-              <p class="card-price">R$ 28,00</p>
-              <span class="card-parcel">até 3x de R$9,33</span>
-            </div>
-            <button class="btn default">COMPRAR</button>
-          </li>
-          <li class="card-item">
-            <img src="./img/img_2.png" alt="">
-            <div class="card-description">
-              <h2 class="card-title">CAMISETA MESCLA</h2>
-              <p class="card-price">R$ 28,00</p>
-              <span class="card-parcel">até 3x de R$9,33</span>
-            </div>
-            <button class="btn default">COMPRAR</button>
-          </li>
-          <li class="card-item">
-            <img src="./img/img_2.png" alt="">
-            <div class="card-description">
-              <h2 class="card-title">CAMISETA MESCLA</h2>
-              <p class="card-price">R$ 28,00</p>
-              <span class="card-parcel">até 3x de R$9,33</span>
-            </div>
-            <button class="btn default">COMPRAR</button>
-          </li>
-          <li class="card-item">
-            <img src="./img/img_2.png" alt="">
-            <div class="card-description">
-              <h2 class="card-title">CAMISETA MESCLA</h2>
-              <p class="card-price">R$ 28,00</p>
-              <span class="card-parcel">até 3x de R$9,33</span>
-            </div>
-            <button class="btn default">COMPRAR</button>
-          </li>
-          <li class="card-item">
-            <img src="./img/img_2.png" alt="">
-            <div class="card-description">
-              <h2 class="card-title">CAMISETA MESCLA</h2>
-              <p class="card-price">R$ 28,00</p>
-              <span class="card-parcel">até 3x de R$9,33</span>
-            </div>
-            <button class="btn default">COMPRAR</button>
-          </li> -->
         </ul>
         <button class="btn primary loading-more">CARREGAR MAIS</button>
       </div>
@@ -259,6 +387,6 @@
   </footer>
 </body>
 
-<script src=" bundle.js"></script>
+<script src="bundle.js"></script>
 
 </html>
