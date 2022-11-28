@@ -59,9 +59,8 @@ async function fetchProducts() {
     dataProducts = response.map((item) => {
       return item;
     });
-
-    renderProducts(response);
     filtroGlobal = dataProducts;
+    renderProducts(response);
   } catch (error) {
     productsGrid.innerHTML = `
     <div style="color:red;">
@@ -69,13 +68,6 @@ async function fetchProducts() {
       <p>ERRO:${error}</p>
     </div>`;
   }
-
-  const btnCards = document.querySelectorAll("button");
-  btnCards.forEach((item) => {
-    item.addEventListener("click", () => {
-      cartItem.innerText = cartItens += 1;
-    });
-  });
 }
 
 function renderProducts(products) {
@@ -100,7 +92,13 @@ function renderProducts(products) {
     loadingMore.classList.remove("disabled");
     limiteAtual = 6;
   }
-  // limiteAtual = 6;
+  const btnCards = document.querySelectorAll(".btn.default");
+  btnCards.forEach((item) => {
+    item.addEventListener("click", () => {
+      cartItem.innerText = cartItens += 1;
+    });
+  });
+  verificaLoad();
 }
 
 // ordenação
@@ -307,6 +305,12 @@ loadingMore.addEventListener("click", () => {
     loadingMore.classList.add("disabled");
   }
 });
+
+function verificaLoad() {
+  if (filtroGlobal.length < limiteAtual) {
+    loadingMore.classList.add("disabled");
+  }
+}
 
 // click no filtro mobile
 const btnMobile = document.querySelectorAll(".btn.mobile");
